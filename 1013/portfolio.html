@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的作品集</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* 進階：hover 效果示範 */
+    .card:hover { transform: translateY(-4px); transition: 0.2s ease; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+  </style>
+</head>
+<body>
+  <!-- 1. Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">你的名字</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section id="home" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-4 fw-bold">嗨，我是 <span class="text-info">郭秉逸</span></h1>
+          <p class="lead">這是我的個人作品集網站，專注於前端開發 / UI 設計 / 資料分析</p>
+          <div class="d-flex gap-2">
+            <a href="#portfolio" class="btn btn-warning">看作品</a>
+            <a href="#contact" class="btn btn-outline-warning">聯絡我</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="sigma man.jpg" class="img-fluid rounded-circle" alt="sigma">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">關於我</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img src="成都超人.jpg" class="img-fluid rounded" alt="Avatar">
+        </div>
+        <div class="col-md-6">
+          <p class="fs-5">我是 <span class="fw-bold text-info">郭秉逸</span>目前就讀淡江大學資管系，每天就是抽2根菸爽一下才要回家。</p>
+          <p class="text-muted">也熟悉上課睡覺、在留言區跟別人狗叫、與專案協作工具（Git/GitHub）。</p>
+          <div class="mt-3">
+            <span class="badge bg-primary me-2">HTML</span>
+            <span class="badge bg-success me-2">CSS</span>
+            <span class="badge bg-info me-2">JavaScript</span>
+            <span class="badge bg-dark">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Skills -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">我的skill</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <div class="display-6 mb-2">🧩</div>
+              <h5 class="card-title">前端開發</h5>
+              <p class="card-text">HTML / CSS / JS、RWD、Bootstrap 組件運用。</p>
+              <div class="progress" role="progressbar" aria-label="skill-frontend">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <div class="display-6 mb-2">🎨</div>
+              <h5 class="card-title">UI/UX 設計</h5>
+              <p class="card-text">色彩 / 排版 / 元件一致性與互動細節。</p>
+              <div class="progress" role="progressbar" aria-label="skill-uiux">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <div class="display-6 mb-2">📊</div>
+              <h5 class="card-title">資料處理</h5>
+              <p class="card-text">基礎 Python、圖表化、簡報視覺化敘事。</p>
+              <div class="progress" role="progressbar" aria-label="skill-data">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- 5. Portfolio -->
+<section id="portfolio" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">作品集</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/600x400?text=Week3" class="card-img-top" alt="Week3">
+          <div class="card-body">
+            <h5 class="card-title">人工智慧導論 - Week 3</h5>
+            <p class="card-text">課程作業程式碼與實作紀錄。</p>
+            <a href="https://github.com/Gary-Jader7709/Artificial-Intelligence-Introduction-Code/tree/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7/week3"
+               target="_blank" class="btn btn-primary">查看詳情</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/600x400?text=Week4" class="card-img-top" alt="Week4">
+          <div class="card-body">
+            <h5 class="card-title">人工智慧導論 - Week 4</h5>
+            <p class="card-text">延伸練習與演算法應用展示。</p>
+            <a href="https://github.com/Gary-Jader7709/Artificial-Intelligence-Introduction-Code/tree/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7/week4"
+               target="_blank" class="btn btn-primary">查看詳情</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/600x400?text=Week5" class="card-img-top" alt="Week5">
+          <div class="card-body">
+            <h5 class="card-title">人工智慧導論 - Week 5（LineBot 記帳系統）</h5>
+            <p class="card-text">LineBot 自動記帳專案程式與 Flask 範例。</p>
+            <a href="https://github.com/Gary-Jader7709/Artificial-Intelligence-Introduction-Code/tree/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7/week5/line_track_expenses"
+               target="_blank" class="btn btn-primary">查看詳情</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 6. Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">聯絡我</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">姓名</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">主旨</label>
+              <input type="text" class="form-control" id="subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">訊息</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">送出</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- 7. Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <div class="mb-2">
+      <a class="text-white me-3" href="https://github.com/Gary-Jader7709/114_tkuim_web" target="_blank" aria-label="github">
+        GitHub
+      </a>
+      <a class="text-white" href="https://www.instagram.com/fuck_up_kuo/" target="_blank" aria-label="instagram">
+        Instagram
+      </a>
+    </div>
+    <p class="mb-0">&copy; 2025 郭秉逸. lol ggwp.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
