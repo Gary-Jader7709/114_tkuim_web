@@ -1,0 +1,8 @@
+# 統一所有文字檔案為 LF 結尾
+* text=auto eol=lf
+
+# 這裡可額外指定語言（可選）
+*.html text eol=lf
+*.js   text eol=lf
+*.css  text eol=lf
+*.md   text eol=lf

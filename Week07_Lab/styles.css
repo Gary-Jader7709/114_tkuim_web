@@ -1,0 +1,14 @@
+/* styles.css */
+.strength { background:#e9ecef; border-radius:6px; height:8px; overflow:hidden; }
+#strength-fill { height:100%; width:0%; transition:width .25s ease; }
+#strength-fill.weak { background:#dc3545; }
+#strength-fill.mid { background:#fd7e14; }
+#strength-fill.good { background:#20c997; }
+#strength-fill.strong { background:#198754; }
+.tag.btn { user-select:none; }
+.tag.btn.btn-primary { color:#fff; }
+.toast { opacity:0; transition:opacity .25s ease; pointer-events:none; }
+.toast.show { opacity:1; }
+button.loading{ position:relative; }
+button.loading::after{ content:''; position:absolute; right:12px; top:50%; transform:translateY(-50%); width:1rem; height:1rem; border:2px solid rgba(255,255,255,.7); border-top-color:transparent; border-radius:50%; animation:spin .8s linear infinite; }
+@keyframes spin{ to{ transform:translateY(-50%) rotate(360deg);} }
